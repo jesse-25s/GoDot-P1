@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cki2sk1e714tr"]
+
+[ext_resource type="AudioStream" uid="uid://lsdxs61qu10l" path="res://assets/music/mashup-206927.mp3" id="1_dcr2r"]
+
+[node name="MusicBGM" type="AudioStreamPlayer2D"]
+stream = ExtResource("1_dcr2r")
+autoplay = true
+bus = &"Music"
