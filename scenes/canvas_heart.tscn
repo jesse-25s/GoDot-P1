@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://bnng02mgsdta2"]
+
+[ext_resource type="PackedScene" uid="uid://gcgsww3a617j" path="res://scenes/heart_bar.tscn" id="1_cmftd"]
+[ext_resource type="Script" path="res://scripts/heart_count.gd" id="1_vl42o"]
+
+[node name="CanvasHeart" type="CanvasLayer"]
+script = ExtResource("1_vl42o")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 873.0
+offset_top = 20.0
+offset_right = 900.0
+offset_bottom = 43.0
+scale = Vector2(1.77214, 1.77214)
+text = "HP"
+
+[node name="Bar" type="VBoxContainer" parent="."]
+offset_left = 933.0
+offset_top = 23.0
+offset_right = 1429.0
+offset_bottom = 119.0
+scale = Vector2(0.405772, 0.405772)
+
+[node name="HeartBar" parent="Bar" instance=ExtResource("1_cmftd")]
+layout_mode = 2

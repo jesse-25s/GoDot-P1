@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://cf21k7vm2qycg"]
+
+[ext_resource type="PackedScene" uid="uid://cojevjs0f6k7l" path="res://scenes/heart_bar.tscn" id="1_qbxrk"]
+
+[node name="Bars" type="VBoxContainer"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="HeartBar" parent="." instance=ExtResource("1_qbxrk")]
+layout_mode = 2
